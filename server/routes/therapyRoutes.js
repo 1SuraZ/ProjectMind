@@ -1,10 +1,8 @@
-// routes/therapyRoutes.js
 const express = require('express');
 const router = express.Router();
+const therapyController = require('../controllers/therapyController');
 
-// Define your routes here
-router.get('/', (req, res) => {
-  res.send('Therapy Route');
-});
+router.get('/', therapyController.getAllTherapies);
+router.post('/', therapyController.createTherapy);
 
 module.exports = router;

@@ -1,0 +1,151 @@
+.hero {
+    background-color: #f9fafb;
+    padding: 3rem 0;
+    text-align: left;
+  }
+  
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #111827;
+  }
+  
+  .hero p {
+    color: #6b7280;
+    font-size: 1.25rem;
+  }
+  
+  .buttons {
+    margin-top: 1rem;
+  }
+  
+  .buttons .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .buttons .btn.primary {
+    background-color: #3b82f6;
+    color: #fff;
+  }
+  
+  .buttons .btn.secondary {
+    background-color: #e5e7eb;
+    color: #111827;
+  }
+  
+  .services {
+    background-color: #fff;
+    padding: 3rem 0;
+  }
+  
+  .services .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .service {
+    text-align: left;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    color: #111827;
+  }
+  
+  .service p {
+    color: #6b7280;
+    margin: 1rem 0;
+  }
+  
+  .service .learn-more {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  .service .learn-more:hover {
+    text-decoration: underline;
+  }
+  
+  .testimonials {
+    background-color: #f9fafb;
+    padding: 3rem 0;
+  }
+  
+  .testimonials .container {
+    text-align: left;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    color: #111827;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+  
+  .testimonial p {
+    color: #111827;
+  }
+  
+  .testimonial cite {
+    color: #6b7280;
+  }
+  
+  .footer {
+    background-color: #111827;
+    color: #9ca3af;
+    padding: 3rem 0;
+    text-align: left;
+  }
+  
+  .footer h3 {
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .footer-bottom nav {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-bottom nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .footer-bottom nav a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom p {
+    color: #9ca3af;
+  }
+  

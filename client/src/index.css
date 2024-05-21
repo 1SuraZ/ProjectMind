@@ -8,10 +8,35 @@ body {
   text-align: center;
 }
 
-h1 {
+h1, h2, h3 {
   color: #333;
 }
 
 p {
   color: #666;
 }
+
+.primary-button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background-color: #e0e0e0;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.8;
+}
+
+/* Add any additional global styles here */

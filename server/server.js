@@ -5,7 +5,7 @@ const cors = require('cors');
 const therapyRoutes = require('./routes/therapyRoutes');
 const peerSupportRoutes = require('./routes/peerSupportRoutes');
 const beMindfulRoutes = require('./routes/beMindfulRoutes');
-require('dotenv').config();
+const blogRoutes = require('./routes/blogRoutes'); 
 
 const app = express();
 
