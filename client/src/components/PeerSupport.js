@@ -1,17 +1,20 @@
 import React from 'react';
+import Layout from './Layout';
+import './App.css';
 
 const PeerSupport = () => {
   return (
-    <div className="container mx-auto px-4 md:px-6">
-      <section className="py-12 md:py-24">
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Peer Support</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+    <Layout>
+      <section className="peer-support-section">
+        <div className="container">
+          <h1>Peer Support</h1>
+          <p>
             Join our supportive community and find solace in shared experiences and mutual understanding.
           </p>
+          <img src="/images/peer_support.jpg" alt="Peer Support" className="peer-support-image" />
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 

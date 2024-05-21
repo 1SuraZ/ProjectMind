@@ -1,17 +1,20 @@
 import React from 'react';
+import Layout from './Layout';
+import './App.css';
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 md:px-6">
-      <section className="py-12 md:py-24">
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50">About Us</h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            Learn more about our mission, vision, and values.
+    <Layout>
+      <section className="about-section">
+        <div className="container">
+          <h1>About Us</h1>
+          <p>
+            At Mindful, our mission is to empower individuals on their mental health journey by providing comprehensive resources and a supportive community.
           </p>
+          <img src="/images/about_us.jpg" alt="About Us" className="about-image" />
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 

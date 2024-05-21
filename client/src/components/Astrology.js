@@ -1,17 +1,20 @@
 import React from 'react';
+import Layout from './Layout';
+import './App.css';
 
 const Astrology = () => {
   return (
-    <div className="container mx-auto px-4 md:px-6">
-      <section className="py-12 md:py-24">
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Astrology</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+    <Layout>
+      <section className="astrology-section">
+        <div className="container">
+          <h1>Astrology</h1>
+          <p>
             Discover the cosmic insights that can guide your personal growth and self-understanding.
           </p>
+          <img src="/images/astrology.jpg" alt="Astrology" className="astrology-image" />
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 

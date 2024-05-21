@@ -1,17 +1,20 @@
 import React from 'react';
+import Layout from './Layout';
+import './App.css';
 
 const BeMindful = () => {
   return (
-    <div className="container mx-auto px-4 md:px-6">
-      <section className="py-12 md:py-24">
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Be Mindful</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+    <Layout>
+      <section className="be-mindful-section">
+        <div className="container">
+          <h1>Be Mindful</h1>
+          <p>
             Explore our collection of guided meditations, breathing exercises, and spiritual practices.
           </p>
+          <img src="/images/be_mindful.jpg" alt="Be Mindful" className="be-mindful-image" />
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 
