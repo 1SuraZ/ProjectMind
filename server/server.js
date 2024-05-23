@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 app.use('/therapy', therapyRoutes);
 app.use('/peer-support', peerSupportRoutes);
 app.use('/be-mindful', beMindfulRoutes);
+app.use('/blog', blogRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
