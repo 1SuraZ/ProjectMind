@@ -1,101 +1,141 @@
 import React from 'react';
-import Layout from '../Layout';
+import { Link } from 'react-router-dom';
+import Layout from '../Layout/Layout';
+import './Home.css';
 
 const Home = () => {
   return (
     <Layout>
-      <section className="intro-section">
-        <div className="container">
-          <h1>Unlock Your Mental Wellbeing</h1>
-          <p>
-            Mindful is a comprehensive platform dedicated to empowering individuals on their mental health journey.
-            Explore our range of services and discover the path to a healthier, more balanced life.
-          </p>
-          <div className="buttons">
-            <button className="primary-button">Get Started</button>
-            <button className="secondary-button">Learn More</button>
-          </div>
-        </div>
-      </section>
-      <section className="services-section">
-        <div className="container">
-          <div className="service">
-            <div className="icon-wrapper"><img src="/icons/therapy.png" alt="Therapy Icon"/></div>
-            <h3>Therapy</h3>
-            <p>
-              Connect with licensed therapists and embark on a personalized journey to mental wellness.
-            </p>
-            <a href="/therapy">Learn More</a>
-          </div>
-          <div className="service">
-            <div className="icon-wrapper"><img src="/icons/peer_support.png" alt="Peer Support Icon"/></div>
-            <h3>Peer Support</h3>
-            <p>
-              Join our supportive community and find solace in shared experiences and mutual understanding.
-            </p>
-            <a href="/peer-support">Learn More</a>
-          </div>
-          <div className="service">
-            <div className="icon-wrapper"><img src="/icons/be_mindful.png" alt="Be Mindful Icon"/></div>
-            <h3>Be Mindful</h3>
-            <p>
-              Explore our collection of guided meditations, breathing exercises, and spiritual practices.
-            </p>
-            <a href="/be-mindful">Learn More</a>
-          </div>
-          <div className="service">
-            <div className="icon-wrapper"><img src="/icons/astrology.png" alt="Astrology Icon"/></div>
-            <h3>Astrology</h3>
-            <p>
-              Discover the cosmic insights that can guide your personal growth and self-understanding.
-            </p>
-            <a href="/astrology">Learn More</a>
-          </div>
-        </div>
-      </section>
-      <section className="testimonials-section">
-        <div className="container">
-          <h2>Hear from Our Satisfied Users</h2>
-          <p>Discover how Mindful has transformed the lives of individuals on their mental health journey.</p>
-          <div className="testimonial">
-            <blockquote>
+      <div className="home">
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="container">
+            <div className="hero-content">
+              <h1>Your Journey to Mental Wellness Starts Here</h1>
               <p>
-                "Mindful has been a game-changer for me. The therapists are incredible, and the peer support
-                community has been a lifeline."
+                Discover a supportive community and professional resources to help you navigate your mental health journey with confidence and care.
               </p>
-              <cite>- Emma, 32</cite>
-            </blockquote>
+              <div className="hero-actions">
+                <Link to="/services" className="btn btn-primary">Explore Services</Link>
+                <Link to="/contact" className="btn btn-secondary">Get Started</Link>
+              </div>
+            </div>
           </div>
-          <div className="testimonial">
-            <blockquote>
+        </section>
+
+        {/* Features Section */}
+        <section className="features">
+          <div className="container">
+            <h2 className="section-title">Why Choose Mindful?</h2>
+            <div className="features-grid">
+              <div className="feature-card">
+                <div className="feature-icon">
+                  <i className="fas fa-user-md"></i>
+                </div>
+                <h3>Professional Therapy</h3>
+                <p>Access licensed therapists and mental health professionals for personalized support.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">
+                  <i className="fas fa-users"></i>
+                </div>
+                <h3>Peer Support</h3>
+                <p>Connect with others who understand your journey in a safe, supportive environment.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">
+                  <i className="fas fa-brain"></i>
+                </div>
+                <h3>Mindfulness Tools</h3>
+                <p>Learn practical techniques to manage stress and improve mental well-being.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Preview */}
+        <section className="services-preview">
+          <div className="container">
+            <h2 className="section-title">Our Services</h2>
+            <div className="services-grid">
+              <div className="service-card">
+                <img src="/images/therapy.jpg" alt="Therapy Services" />
+                <div className="service-content">
+                  <h3>Therapy Services</h3>
+                  <p>Professional counseling and therapy sessions tailored to your needs.</p>
+                  <Link to="/therapy" className="btn btn-primary">Learn More</Link>
+                </div>
+              </div>
+              <div className="service-card">
+                <img src="/images/peer-support.jpg" alt="Peer Support" />
+                <div className="service-content">
+                  <h3>Peer Support</h3>
+                  <p>Connect with others who understand your journey.</p>
+                  <Link to="/peer-support" className="btn btn-primary">Learn More</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="testimonials">
+          <div className="container">
+            <h2 className="section-title">What Our Clients Say</h2>
+            <div className="testimonials-grid">
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  "Mindful has been a game-changer in my mental health journey. The support and resources have been invaluable."
+                </div>
+                <div className="testimonial-author">
+                  <img src="/images/client1.jpg" alt="Sarah M." />
+                  <div>
+                    <h4>Sarah M.</h4>
+                    <p>Client since 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  "The peer support groups have helped me feel less alone. I've made meaningful connections and learned so much."
+                </div>
+                <div className="testimonial-author">
+                  <img src="/images/client2.jpg" alt="James T." />
+                  <div>
+                    <h4>James T.</h4>
+                    <p>Client since 2021</p>
+                  </div>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  "The mindfulness tools have transformed how I handle stress. I'm more present and at peace with myself."
+                </div>
+                <div className="testimonial-author">
+                  <img src="/images/client3.jpg" alt="Emma R." />
+                  <div>
+                    <h4>Emma R.</h4>
+                    <p>Client since 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="cta">
+          <div className="container">
+            <div className="cta-content">
+              <h2>Ready to Start Your Journey?</h2>
               <p>
-                "I've been practicing mindfulness and meditation through Mindful, and it's truly transformed my
-                mental well-being. Highly recommended!"
+                Take the first step towards better mental health. Our team is here to support you every step of the way.
               </p>
-              <cite>- Michael, 45</cite>
-            </blockquote>
+              <Link to="/contact" className="btn btn-primary">Get Started Today</Link>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="faq-resources-join-section">
-        <div className="container">
-          <div className="faq">
-            <h3>Frequently Asked Questions</h3>
-            <p>Get answers to the most common questions about Mindful.</p>
-            <a href="/faq">View FAQ</a>
-          </div>
-          <div className="resources">
-            <h3>Resources</h3>
-            <p>Explore our collection of articles, guides, and tools to support your mental health journey.</p>
-            <a href="/resources">View Resources</a>
-          </div>
-          <div className="join-us">
-            <h3>Join Us</h3>
-            <p>Become a part of our community as a therapist or astrologer.</p>
-            <a href="/join">Learn More</a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </Layout>
   );
 };
