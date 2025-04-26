@@ -1,31 +1,46 @@
 .footer {
-  background-color: var(--background-dark);
-  color: var(--text-white);
-  padding: var(--spacing-12) 0 var(--spacing-6);
+  background-color: #1B4332;
+  padding: 4rem 0;
+  color: #ffffff;
 }
 
 .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: var(--spacing-8);
-  margin-bottom: var(--spacing-8);
+  gap: 2.5rem;
+}
+
+.footer-section {
+  background-color: #B7E4C7;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.main-section {
+  max-width: none;
 }
 
 .footer-section h3 {
-  color: var(--text-white);
-  margin-bottom: var(--spacing-4);
-  font-size: var(--font-size-xl);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1B4332;
 }
 
 .footer-section h4 {
-  color: var(--text-white);
-  margin-bottom: var(--spacing-4);
-  font-size: var(--font-size-lg);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1B4332;
 }
 
 .footer-section p {
-  color: var(--text-light);
+  color: #2D6A4F;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .footer-section ul {
@@ -35,99 +50,128 @@
 }
 
 .footer-section ul li {
-  margin-bottom: var(--spacing-2);
+  margin-bottom: 0.75rem;
 }
 
 .footer-section ul li a {
-  color: var(--text-light);
+  color: #2D6A4F;
   text-decoration: none;
-  transition: color var(--transition-normal);
+  transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: var(--primary-color);
+  color: #1B4332;
 }
 
 .social-links {
   display: flex;
-  gap: var(--spacing-4);
-  margin-bottom: var(--spacing-4);
+  gap: 1rem;
 }
 
-.social-link {
+.social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--primary-color);
-  color: var(--text-white);
-  transition: all var(--transition-normal);
-  border: none;
-  cursor: pointer;
-  padding: 0;
+  background-color: #40916C;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
-.social-link:hover {
-  transform: translateY(-3px);
-  background: var(--primary-dark);
+.social-links a:hover {
+  background-color: #2D6A4F;
+  transform: translateY(-2px);
 }
 
-.social-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.3);
+.contact-info li {
+  color: #2D6A4F;
+  margin-bottom: 0.75rem;
 }
 
-.contact-info {
-  color: var(--text-light);
+.contact-info a,
+.contact-info address {
+  color: #2D6A4F;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 0.3s ease;
 }
 
-.contact-info p {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
-}
-
-.contact-info i {
-  color: var(--primary-color);
+.contact-info a:hover {
+  color: #1B4332;
 }
 
 .footer-bottom {
-  text-align: center;
   padding-top: var(--spacing-6);
   border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.footer-bottom p {
   color: var(--text-light);
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.footer-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color var(--transition-normal);
+  font-size: var(--font-size-sm);
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.divider {
+  color: var(--text-light);
+  opacity: 0.5;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .footer-content {
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-8);
+    gap: 2rem;
+  }
+
+  .main-section {
+    grid-column: 1 / -1;
   }
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-6);
+@media (max-width: 640px) {
+  .footer {
+    padding: 3rem 0;
   }
 
-  .footer-section {
-    text-align: center;
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .social-links {
     justify-content: center;
   }
 
-  .contact-info {
+  .footer-section {
     text-align: center;
-  }
-
-  .contact-info p {
-    justify-content: center;
+    margin-bottom: 0;
   }
 } 

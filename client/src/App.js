@@ -13,6 +13,8 @@ import Astrology from './components/Astrology/Astrology';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Services from './components/Service/Services';
+import Login from './components/Auth/Login';
+import SignUp from './components/Auth/SignUp';
 import NotFound from './components/NotFound/NotFound';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="/astrology" component={Astrology} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp} />
           <Route component={NotFound} />
         </Switch>
       </div>
